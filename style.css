@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
     scroll-behavior: smooth;
 }
 
@@ -72,8 +72,8 @@ input {
     max-width: 960px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 30% auto 10%;
-    gap: 2%;
+    grid-template-columns: 200px auto 50px;
+    gap: 5%;
     padding: 2rem 0;
 }
 
@@ -85,7 +85,7 @@ input {
 
 .header__menu {
     width: 100%;
-    height: 5rem;
+    height: 50px;
     background: url(./images/menu.svg) center / contain no-repeat;
     border: none;
     padding: 0;
@@ -93,13 +93,15 @@ input {
 
 .header__info-name {
     font-family: 'InstagramSansCYR-Bold', sans-serif;
-    font-size: 4rem;
-    margin: 0 0 2rem;
-    padding: 1rem 0;
+    font-size: 3rem;
+    margin: 0 0 1rem;
+    padding: 0;
+    line-height: 1.2;
 }
 
 .header__info-position {
     font-size: 1rem;
+    font-weight: 700;
     line-height: 1.3;
     margin: 0 0 1rem;
 }
@@ -114,7 +116,6 @@ input {
 .topical__container {
     max-width: 960px;
     margin: 0 auto;
-    padding-bottom: 2rem;
 }
 
 .topical__list {
@@ -122,15 +123,42 @@ input {
     gap: 2rem;
 }
 
+.topical__item {
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topical__img-wrapper {
+    display: flex;
+    line-height: 1;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
 .topical__img {
     width: 4rem;
+    height: 4rem;
+    border-radius: 150px;
 }
 
 /*contacts*/
 
+.contacts__section {
+    padding: 2rem 0;
+}
+
 .contacts__container {
     max-width: 960px;
     margin: 0 auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
 }
 
 .contacts__list {
@@ -140,11 +168,12 @@ input {
 
 .contacts__link {
     display: block;
-    width: 2rem;
-    height: 2rem;
-    background: center / contain no-repeat;
+    width: 100%;
     margin: 0 auto;
+    padding: 1.5rem 0;
+    background: center / 1.5rem no-repeat;
 }
+
 .contacts__link--1 {
     background-image: url(./images/phone.svg);
 }
@@ -162,13 +191,13 @@ input {
 .content__container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 0 0 2rem;
 }
 
 .content__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .1rem;
+    gap: 1%;
 }
 
 .content__item {
@@ -216,7 +245,7 @@ input {
     }
 
     .topical__container {
-        padding: 0 1rem 2rem;
+        padding: 0 1rem;
     }
 
     .header__info-name {
@@ -261,11 +290,11 @@ input {
     }
 
     .topical__container {
-        padding: 0 1rem 1rem;
+        padding: 0 1rem;
     }
 
     .content__container {
-        padding: 1rem 0;
+        padding: 0 0 1rem;
     }
 
     .topical__list {
