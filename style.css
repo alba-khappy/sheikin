@@ -124,6 +124,10 @@ input {
 }
 
 .topical__item {
+    text-align: center;
+}
+
+.topical__item a {
     display: flex;
     line-height: 1;
     align-items: center;
@@ -145,6 +149,10 @@ input {
     width: 4rem;
     height: 4rem;
     border-radius: 150px;
+}
+
+.topical__img-description {
+    font-size: 1rem;
 }
 
 /*contacts*/
@@ -191,7 +199,6 @@ input {
 .content__container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 0 2rem;
 }
 
 .content__list {
@@ -254,27 +261,12 @@ input {
     background-image: url(./images/project-6.png);
 }
 
-
-@media (max-width: 960px) {
-    .header__container {
-        padding: 2rem 1rem;
-    }
-
-    .topical__container {
-        padding: 0 1rem;
-    }
-
-    .header__info-name {
-        font-size: 3rem;
-        margin: 0 0 1rem;
-    }
-}
-
 @media (max-width: 960px) {
 
     .header__container {
         grid-template-columns: repeat(3, auto);
         gap: 1rem;
+        padding: 2rem 1rem;
     }
 
     .header__info-container {
@@ -293,16 +285,11 @@ input {
     .header__info-name {
         font-size: 2rem;
         padding: 0;
-        line-height: .5;
+        line-height: .8;
     }
 
     .header__info-position, .header__info-description {
         font-size: .8rem;
-    }
-
-    .contacts__link {
-        width: 1rem;
-        height: 1rem;
     }
 
     .topical__container {
@@ -315,7 +302,15 @@ input {
 
     .topical__list {
         display: flex;
-        gap: 2rem;
-        justify-content: center;
+        gap: .5rem;
+    }
+
+    .topical__img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .topical__img-description {
+        font-size: .7rem;
     }
 }
